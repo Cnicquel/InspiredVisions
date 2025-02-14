@@ -1,0 +1,421 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: grey;
+}
+
+/* Navbar */
+#lp-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#main-nav {
+   padding-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+#lp-logo img {
+    width: 300px;
+    height: 80px;
+}
+#lp-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: grey;
+    font-size: 18px;
+    display: inline;
+    align-items: center;
+}
+#lp-links a:hover {
+    background-color: #BFBAB4;
+    color: #ffffff;
+}
+#lp-button {
+    background-color: grey;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: right;
+}
+
+#lp-button a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#lp-button:hover {
+    background-color: brown;
+    
+}
+
+
+
+/* Hero Section */
+#lp-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+#lp-hero-text {
+    max-width: 50%;
+}
+#lp-hero-text h1 {
+    font-size: 36px;
+    color: grey;
+}
+#lp-hero-text p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+
+#lp-hero-image img {
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* Problems Section */
+#lp-problems {
+    text-align: center;
+    padding: 50px;
+    background-color: #f8f9fa;
+}
+
+#lp-problems-title {
+    font-size: 28px;
+    color: grey;
+    margin-bottom: 10px;
+}
+
+
+
+#lp-problems-desc {
+    font-size: 18px;
+    color: #555;
+    max-width: 1000px;
+    margin: 0 auto 30px;
+}
+
+#lp-problems-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lp-problem-item {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.lp-problem-item a {
+    
+    color: #666;
+}
+
+.lp-problem-item a:hover {
+    background-color: grey;
+    color: #fff;
+}
+
+.lp-problem-image {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.lp-problem-title {
+    font-size: 20px;
+    color: grey;
+    margin-top: 15px;
+}
+
+.lp-problem-text {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Starter Pack Section */
+#starter-pack {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.starter-pack-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.starter-pack-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.starter-pack-content {
+    flex: 1;
+}
+
+.starter-pack-content h2 {
+    font-size: 28px;
+    color: grey;
+    margin-bottom: 10px;
+}
+
+.starter-pack-content p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Accordion Styling */
+.accordion-item {
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-button {
+    width: 100%;
+    background: white;
+    color: grey;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    
+    text-align: left;
+    transition: 0.3s;
+}
+
+.accordion-button:hover {
+    background: #e8e8e8;
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px;
+    font-size: 16px;
+    color: #666;
+}
+
+/* Opened State */
+.accordion-item.active .accordion-content {
+    display: block;
+}
+
+/* FAQ Section */
+#faq {
+    background-color: #ffffff;
+    padding: 50px 0;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.faq-container h2 {
+    font-size: 28px;
+    color: grey;
+    margin-bottom: 20px;
+}
+
+/* FAQ Items */
+.faq-list {
+    text-align: left;
+}
+
+.faq-item {
+    background: #f8f9fa;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* FAQ Buttons */
+.faq-question {
+    width: 100%;
+    background: white;
+    color: grey;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.faq-question:hover {
+    background: #e8e8e8;
+}
+
+/* Hidden Answer */
+.faq-answer {
+    display: none;
+    padding: 15px;
+    font-size: 16px;
+    color: #666;
+}
+
+/* Opened State */
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+#lp-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #f8f8f8;
+    color: grey;
+    box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#lp-footer-left {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#lp-footer-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: grey;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+.guarantee-section {
+    display: flex;
+    align-items: center;
+    margin-top: -20px;
+    margin-left: 50%;
+    width: 70%;
+    padding: 10px; /* Add padding inside the border */
+    border: 2px solid #8C6B4D; /* Customize the border style, width, and color */
+    border-radius: 5px; /* Optional: Add rounded corners */
+   
+  }
+  
+  .guarantee-section img {
+    margin-right: 10px;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .guarantee-section p {
+    font-size: 16px;
+    color: grey;
+  }
+
+  #stripe {
+    margin: 100px;
+  }
+
+  .pp-container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.pp-container h2 {
+    color: #333;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.pp-container p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.pp-container ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+.pp-container ul li {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.pp-container h3 {
+    color: #007BFF;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.ln-container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.ln-container h2 {
+    color: #333;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.ln-container p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.ln-container ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+.ln-container ul li {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.ln-container h3 {
+    color: #007BFF;
+    font-size: 20px;
+    margin-top: 20px;
+}
