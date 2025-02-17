@@ -12,12 +12,59 @@ body {
     align-items: center;
     padding: 15px 50px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: auto;
 }
 
 #main-nav {
    padding-bottom: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: auto;
 }
+
+.menu-toggle {
+    display: block;
+    background: grey;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 20px;
+    margin: auto;
+}
+
+
+/* Bouton caché en mode desktop */
+@media only screen and (min-width: 760px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+ /* Cacher le menu sur mobile */
+ @media (max-width: 768px) {
+    #main-nav ul {
+        display: none;
+        flex-direction: column;
+        background: grey;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+        margin: auto;
+    }
+
+   
+
+    #main-nav ul.show {
+        display: flex;
+    }
+   
+}
+
+ /* lp-nav */
 #lp-logo img {
     width: 300px;
     height: 80px;
@@ -83,6 +130,42 @@ body {
     border-radius: 10px;
 }
 
+@media only screen and (max-width: 900px) {
+    #lp-hero-image {
+       display: none;
+    }
+  }
+   /* Guarantee Section */
+
+  .guarantee-section {
+    display: flex;
+    align-items: center;
+    margin-top: -20px;
+    margin-left: 50%;
+    width: 70%;
+    padding: 10px; /* Add padding inside the border */
+    border: 2px solid #8C6B4D; /* Customize the border style, width, and color */
+    border-radius: 5px; /* Optional: Add rounded corners */
+   
+  }
+  @media only screen and (max-width: 900px) {
+    .guarantee-section {
+       border: none;
+    }
+  }
+ 
+  
+  .guarantee-section img {
+    margin-right: 10px;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .guarantee-section p {
+    font-size: 16px;
+    color: grey;
+  }
+
 /* Problems Section */
 #lp-problems {
     text-align: center;
@@ -112,6 +195,27 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+@media only screen and (max-width: 780px) {
+    #lp-problems-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    #lp-problems-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+       
+        max-width: 400px;
+        margin: 0 auto;
+    }
+  }
+
 
 .lp-problem-item {
     background: white;
@@ -301,6 +405,11 @@ body {
     font-size: 16px;
     font-weight: bold;
 }
+@media only screen and (max-width: 600px) {
+    #lp-footer-left {
+        display: none;
+    }
+  }
 
 #lp-footer-links a {
     margin: 0 15px;
@@ -315,28 +424,7 @@ body {
 
 
 
-.guarantee-section {
-    display: flex;
-    align-items: center;
-    margin-top: -20px;
-    margin-left: 50%;
-    width: 70%;
-    padding: 10px; /* Add padding inside the border */
-    border: 2px solid #8C6B4D; /* Customize the border style, width, and color */
-    border-radius: 5px; /* Optional: Add rounded corners */
-   
-  }
-  
-  .guarantee-section img {
-    margin-right: 10px;
-    width: 60px;
-    height: 60px;
-  }
-  
-  .guarantee-section p {
-    font-size: 16px;
-    color: grey;
-  }
+
 
   #stripe {
     margin: 100px;
@@ -419,3 +507,10 @@ body {
     font-size: 20px;
     margin-top: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+    #lp-logo {
+       
+        display: none;
+      }
+  }
